@@ -1,0 +1,56 @@
+---
+layout: post
+title: "Strategy Pattern"
+subtitle: "Simples explicação e exemplo sobre esse padrão."
+date: 2019-08-31 14:50:00 -0500
+background: "/img/posts/strategy.jpg"
+---
+
+<p>
+  Strategy Pattern é um padrão de design comportamental que permite o
+  encapsulamento de algoritmos alternativos para uma tarefa específica.
+</p>
+
+<p>
+  Oferecendo uma maneira flexível para escrever diversos algoritmos diferentes,
+  passar para classes clientes que precisam deles.
+</p>
+
+<p>
+  Esses clientes desconhecem qual é o algoritmo "real" que está sendo executado,
+  e apenas o executam, fazendo com que o código da classe cliente fique
+  desacoplado das implementações concretas de algoritmos, possibilitando com que
+  consiga trabalhar com N diferentes algoritmos sem precisar alterar o seu
+  código.
+</p>
+<p></p>
+
+<h2 class="section-heading">Exemplificação</h2>
+
+<p>
+  No exemplo abaixo nós criamos a classe <i>Commute</i> para encapsular as
+  possíveis estratégias para trabalhar. Então, definimos três estratégias
+  nomeadas <i>Bus</i>, <i>Personal</i> e <i>Taxi</i>.
+</p>
+
+<p>
+  Usando o padrão podemos alterar em tempo de execução podemos alterar o a
+  chamada do método <i>travel</i> do objeto <i>Commute</i>.
+</p>
+
+<p>
+  <script src="https://gist.github.com/palharez/29ebf29358410b746e609d5cf40c5e56.js"></script>
+</p>
+
+<p>
+  Fontes:
+  <a
+    href="https://medium.com/better-programming/javascript-design-patterns-25f0faaaa15"
+    >JavaScript Design Patterns</a
+  >
+  por Soumyajit Pathak e
+  <a href="https://cursos.alura.com.br/course/design-patterns"
+    >Design Patterns</a
+  >
+  por Alura.
+</p>
