@@ -1,0 +1,87 @@
+---
+layout: post
+title: "Single Responsibility Principle"
+subtitle: "Simples explicação e exemplo sobre essa boa prática."
+date: 2019-12-22 23:50:00 -0500
+background: "/img/posts/single-responsabality.jpg"
+---
+
+<blockquote class="blockquote">
+  <i>
+    <b>Princípio da responsabilidade única:</b> 
+    "Uma classe não pode ter mais de um motivo para ser alterada."
+  </i>
+</blockquote>
+
+<p>
+  De maneira simples e efetiva é diminuir o problema reduzindo a quantidade de código, 
+  quebrando em pequenas partes, focando em um objetivo específico e separando em domínios.
+</p>
+
+<h2 class="section-heading">Exemplificação</h2>
+
+<p>
+  Vamos dar uma olhada nessa função, que recebe uma palavra e um diretório de um arquivo
+   como parâmetro e retorna a porcentagem de vezes que a palavra aparece pelo total de palavras no arquivo.
+</p>
+
+<p>
+  <script src="https://gist.github.com/palharez/cd912376363f5de2ff42ed2581177ac8.js"></script>
+</p>
+
+<p>
+  Esse código faz muita coisa, lê um arquivo, calcula o número total de palavras, 
+  calcula quantas vezes a palavra passada aparece e no final retorna a porcentagem.
+</p>
+
+<p>
+
+</p>
+  Se quiséssemos seguir o padrão de SRP, nos poderíamos substituir por esse código:
+<p>
+  <script src="https://gist.github.com/palharez/5d468a8a00ac824582cd0fc7c5288f15.js"></script>
+</p>
+
+<p>
+  Agora cada função faz apenas uma coisa!
+</p>
+
+<p>
+  Então o que ganhamos reestruturando nosso código dessa maneira?
+  <ul>
+    <li>
+      As funções são facilmente reusáveis e podem ser mixadas dependendo da task, 
+      tornando o código mais fácil e extensível.
+    </li>
+    <li>
+      O código é DRY. Sem código repetido, então se precisamos fazer qualquer modificação,
+       não precisamos fazer apenas em um lugar.
+    </li>
+    <li>
+      O código é limpo, organizado, muito legível e entendível.
+    </li>
+    <li>
+      Podemos escrever testes para cada função separadamente! 
+    </li>
+  </ul>
+</p>
+
+
+<p>
+  Fontes:
+  <a 
+    href="https://medium.com/@viniciuschan/solid-com-python-entendendo-os-5-princ%C3%ADpios-na-pr%C3%A1tica-f2af330b7751"
+  >
+    SOLID com Python</a> 
+  por Vinícius Chan,
+  <a 
+    href="https://dev.to/annalara/solid-programming-part-1-single-responsibility-principle-1ki6"
+  >
+    SOLID Programming</a> 
+  por Anna Zubova, e
+  <a 
+    href="https://cursos.alura.com.br/course/orientacao-a-objetos-avancada-e-principios-solid"
+  > 
+    SOLID com Java</a> 
+  por Alura. Fotos por <a href="https://unsplash.com/">Unsplash</a>.
+</p>
