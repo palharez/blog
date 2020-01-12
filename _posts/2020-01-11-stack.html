@@ -1,0 +1,99 @@
+---
+layout: post
+title: "Stack - Pilha"
+subtitle: "Simples explicação e exemplo sobre essa estrutura de dados."
+date: 2020-01-11 23:50:00 -0500
+background: "/img/posts/stack.jpg"
+---
+
+<p>
+  <b>Pilha</b> ou <i>stack</i> é um tipo especial de lista linear em que todas
+  as operações de inserção e remoção são realizadas pela mesma extremidade
+  chamada de <b>topo</b>, em oposição a outra extremidade, chamada de
+  <b>base</b>.
+</p>
+
+<p>
+  Os elementos são removidos na ordem do programa inversa daquela em que foram
+  inseridos de modo que o último elemento que entra é sempre o primeiro a ser
+  executado, por isto este tipo de estrutura é chamada <b>LIFO</b> (Last In -
+  First Out).
+</p>
+
+<p>
+  A implementação de pilhas pode ser realizada através de vetor ou através de
+  listas encadeadas.
+</p>
+
+<h3 class="">Usos de Pilha:</h3>
+<ul>
+  <li>Funções recursivas em compiladores;</li>
+  <li>Mecanismo de desfazer/refazer dos editores de texto;</li>
+  <li>Navegação entre páginas Web.</li>
+</ul>
+
+<h3 class="">Operações com Pilha:</h3>
+<ul>
+  <li>
+    Criação da pilha (informar a capacidade no caso de implementação sequencial
+    - vetor);
+  </li>
+  <li>Empilhar (push);</li>
+  <li>Desempilhar (pop);</li>
+  <li>Mostrar o topo (peek);</li>
+  <li>Verificar se a pilha está vazia (is_empty);</li>
+  <li>Verificar o tamanho da pilha (size);</li>
+</ul>
+
+<h3 class="">Compelixdade de Operações:</h3>
+<table class="table">
+  <tr>
+    <th>Acesso</th>
+    <th>Pesquisa</th>
+    <th>Inserção</th>
+    <th>Exclusão</th>
+  </tr>
+  <tr>
+    <td>n</td>
+    <td>n</td>
+    <td>1</td>
+    <td>1</td>
+  </tr>
+</table>
+
+<h3 class="">Representação:</h3>
+<img
+  class="img-fluid"
+  src="https://camo.githubusercontent.com/464c4087d283619fe8e8c77cf5805e45faa54ca9/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f622f62342f4c69666f5f737461636b2e706e67"
+  alt="Demo Image"
+/>
+
+<h3 class="">Exemplificação:</h3>
+
+<p>
+  <script src="https://gist.github.com/palharez/e89bd6b6d2ea8aa1c9ffa45b4b1f4c56.js"></script>
+</p>
+
+<p>
+  Fontes:
+  <a
+    href="https://github.com/palharez/Python/blob/master/data_structures/stacks/stack.py"
+  >
+    Stack em Python</a
+  >
+  por Omkar Pathak,
+  <a href="https://www.cos.ufrj.br/~rfarias/cos121/pilhas.html"> Pilhas</a>
+  por Ricardo Farias,
+  <a
+    href="https://pt.wikibooks.org/wiki/Algoritmos_e_Estruturas_de_Dados/Pilhas"
+  >
+    Algoritmos e Estruturas de Dados/Pilhas</a
+  >
+  por Wikilivros, e
+  <a
+    href="https://pt.wikibooks.org/wiki/Algoritmos_e_Estruturas_de_Dados/Pilhas"
+  >
+    Stack em Javascript</a
+  >
+  por Oleksii Trekhleb. Fotos por <a href="https://unsplash.com/">Unsplash</a>.
+</p>
